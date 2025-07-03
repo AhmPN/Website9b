@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Kelas 9B - SMPN 1 Pangkalan Lada</title>
   <style>
-    body {
+    <body>
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #fffaf0;
-    }
-
+ 
     header {
       background-color: #8b4513;
       color: white;
@@ -107,15 +106,15 @@
     }
   </style>
 </head>
-<body>
+<body/>
 
   <header>
-    <button id="login-btn">Login Admin</button>
-    <h1>SMPN 1 PANGKALAN LADA</h1>
-    <h2>Website Kelas 9B</h2>
+   <button id="login-btn">login admin</button>
+   <h1>SMPN 1 PANGKALAN LADA</h1>
+   <h2>Website Kelas 9B</h2>
   </header>
 
-  <nav>
+  <nlav>
     <button onclick="showContent('struktur')">Struktur Kelas</button>
     <button onclick="showContent('anggota')">Anggota Siswa</button>
     <button onclick="showContent('tatatertib')">Tata Tertib</button>
