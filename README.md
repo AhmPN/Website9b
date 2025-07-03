@@ -355,16 +355,12 @@
                     <img src="ibul.jpg" alt="Bersama Ibu Laila" style="width:100%; border-radius:10px;">
                     <p>📸 foto bersama Ibu Laila 😍😍</p>
                 `,
-                pesan: `
-                    <h2>Pesan & Komentar</h2>
-                    <p>Tinggalkan pesan, kesan, atau sekadar sapaan untuk teman-teman!</p>
-                    <div id="comment-list"></div>
-                    <form id="comment-form">
-                        <input type="text" id="comment-name" placeholder="Nama Anda" required>
-                        <textarea id="comment-text" rows="4" placeholder="Tulis komentar Anda..." required></textarea>
-                        <button type="submit">Kirim Pesan</button>
-                    </form>
-                `
+                pesan:  `
+            <h3>Pesan & Komentar</h3>
+            <textarea id="commentInput" rows="4" placeholder="Tulis komentar..."></textarea><br>
+            <button onclick="addComment()">Kirim</button>
+            <ul id="commentList"></ul>
+          `;
             };
             // --- FUNCTIONS ---
             function showContent(menuKey) {
@@ -381,10 +377,7 @@
             function renderComments() {
                 const commentList = document.getElementById('comment-list');
                 if (!commentList) return;
-                commentList.innerHTML = ''; // Clear existing comments
-                comments.forEach((comment, index) => {
-                    const commentDiv = document.createElement('div');
-                    commentDiv.className = 'comment-item';
+                commentList.innerHTML = ''; // Clear existiitem';
                     commentDiv.innerHTML = `
                         <p><strong>${escapeHTML(comment.name)}:</strong></p>
                         <p>${escapeHTML(comment.text)}</p>
