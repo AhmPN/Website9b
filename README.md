@@ -194,61 +194,6 @@
           <li>PKN: segera hadir</li>
         </ul>
       `,
-      komentar: `
-  <h2>Form Komentar</h2>
-  <form id="commentForm">
-    <input type="text" id="nama" placeholder="Nama kamu" required style="padding:8px; width:95%; margin-bottom:10px;"><br>
-    <textarea id="komentar" placeholder="Tulis komentarmu di sini..." required style="padding:8px; width:95%; height:80px;"></textarea><br>
-    <button type="submit" style="padding:8px 16px; margin-top:5px;">Kirim Komentar</button>
-  </form>
-  <div id="commentList" style="margin-top:20px;"></div>
-  <script>
-    document.getElementById("commentForm").onsubmit = function(e) {
-      e.preventDefault();
-      const nama = document.getElementById("nama").value;
-      const isi = document.getElementById("komentar").value;
-      const komentar = { nama, isi, waktu: new Date().toLocaleString() };
-      let semuaKomentar = JSON.parse(localStorage.getItem("komentar9b") || "[]");
-      semuaKomentar.push(komentar);
-      localStorage.setItem("komentar9b", JSON.stringify(semuaKomentar));
-      tampilkanKomentar();
-      this.reset();
-    }
-
-    function tampilkanKomentar() {
-      let semuaKomentar = JSON.parse(localStorage.getItem("komentar9b") || "[]");
-      let html = "<h3>Komentar Terbaru:</h3>";
-      semuaKomentar.reverse().forEach(k => {
-        html += "<p><strong>" + k.nama + "</strong> (" + k.waktu + ")<br>" + k.isi + "</p><hr>";
-      });
-      document.getElementById("commentList").innerHTML = html;
-    }
-
-    tampilkanKomentar();
-`
-      admin: `
-  <h2>Login Admin</h2>
-  <form onsubmit="return loginAdmin()">
-    <input type="password" id="adminPass" placeholder="Masukkan password" required style="padding:8px; width:95%;"><br>
-    <button type="submit" style="padding:8px 16px; margin-top:8px;">Login</button>
-  </form>
-  <div id="adminKomentar"></div>
-  <script>
-    function loginAdmin() {
-      const pass = document.getElementById("adminPass").value;
-      if (pass === "admin9B") {
-        let semuaKomentar = JSON.parse(localStorage.getItem("komentar9b") || "[]");
-        let html = "<h3>Semua Komentar:</h3>";
-        semuaKomentar.reverse().forEach((k, i) => {
-          html += "<p><strong>" + k.nama + "</strong> (" + k.waktu + ")<br>" + k.isi + "</p><hr>";
-        });
-        document.getElementById("adminKomentar").innerHTML = html;
-      } else {
-        alert("Password salah!");
-      }
-      return false;
-    }
-`
       galeri: `
         <h2>Galeri Foto & Kenangan</h2>
         <img src="fotoulangan.jpg" style="width:100%; border-radius:10px;">
