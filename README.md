@@ -117,7 +117,6 @@
 </header>
 
 <nav>
-  <button class="menu-btn" onclick="showContent('beranda')">Beranda</button>
   <button class="menu-btn" onclick="showContent('struktur')">Struktur Kelas</button>
   <button class="menu-btn" onclick="showContent('anggota')">Anggota Siswa</button>
   <button class="menu-btn" onclick="showContent('tata')">Tata Tertib</button>
