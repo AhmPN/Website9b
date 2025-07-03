@@ -126,7 +126,6 @@
   <button class="menu-btn" onclick="showContent('pr')">Tugas / PR</button>
   <button class="menu-btn" onclick="showContent('galeri')">Galeri Foto</button>
   <button class="menu-btn" onclick="showContent('pesan')">Tuliskan Komentar</button>
-  <button class="menu-btn" onclick="showContent('login admin')">login admin</button>
 </nav>
 
 <div id="content">
@@ -286,7 +285,7 @@
 
   function adminLogin() {
     const password = prompt("Masukkan kata sandi admin:", "");
-    if (password === "admin123") { // Ganti "admin123" dengan kata sandi yang lebih aman
+    if (password === "admin9bravo") { // Ganti "admin9bravo" dengan kata sandi yang lebih aman
       renderAdminView();
     } else if (password !== null) {
       alert("Kata sandi salah!");
