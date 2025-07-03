@@ -220,36 +220,8 @@
         <p>📸 foto bersama Ibu Laila 😍😍</p>
         
      `, 
-     komentar: `
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("commentForm");
-  const daftarKomentar = document.getElementById("daftarKomentar");
-
-  if (form && daftarKomentar) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Cegah reload
-
-      const nama = document.getElementById("nama").value.trim();
-      const komentar = document.getElementById("komentar").value.trim();
-
-      if (nama && komentar) {
-        const komenItem = document.createElement("div");
-        komenItem.className = "komen-item";
-        komenItem.innerHTML = `<strong>${nama}</strong><br>${komentar}`;
-
-        daftarKomentar.appendChild(komenItem);
-
-        form.reset();
-      } else {
-        alert("Tolong isi nama dan komentar!");
-      }
-    });
-  }
-});
-    };
-
-    document.getElementById("content").innerHTML = content[menu] || "<p>Menu belum tersedia.</p>";
+  
+      document.getElementById("content").innerHTML = content[menu] || "<p>Menu belum tersedia.</p>";
   }
 </script>
 
