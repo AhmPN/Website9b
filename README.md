@@ -189,7 +189,7 @@
         </table>
       `,
       piket: `
-        <h2>Jadwal Piket Mingguan</h2>
+        <h2>Jadwal Piket Kelas 9b</h2>
         <table>
           <tr><th>Hari</th><th>Nama Petugas</th></tr>
           <tr><td>Senin</td><td>Segera Hadir</td></tr><tr><td>Selasa</td><td>Segera Hadir</td></tr><tr><td>Rabu</td><td>Segera Hadir</td></tr><tr><td>Kamis</td><td>Segera Hadir</td></tr><tr><td>Jumat</td><td>Segera Hadir</td></tr><tr><td>Sabtu</td><td>Segera Hadir</td></tr>
@@ -216,7 +216,7 @@
         <img src="ibul.jpg" style="width:100%; border-radius:10px;"><p>📸 foto bersama Ibu Laila 😍😍</p>
       `,
       pesan: `
-        <h2>Buku Tamu / Kirim Pesan</h2>
+        <h2>komentar / Kirim Pesan</h2>
         <p>Silakan tinggalkan pesan, kesan, atau komentar Anda di bawah ini!</p>
         <form id="comment-form" onsubmit="submitComment(event)">
           <input type="text" id="comment-author" placeholder="Nama Anda" required>
