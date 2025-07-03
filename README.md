@@ -356,11 +356,11 @@
                     <p>📸 foto bersama Ibu Laila 😍😍</p>
                 `,
                 pesan:  `
-            <h3>Pesan & Komentar</h3>
-            <textarea id="commentInput" rows="4" placeholder="Tulis komentar..."></textarea><br>
-            <button onclick="addComment()">Kirim</button>
-            <ul id="commentList"></ul>
-          `;
+                    <h3>Pesan & Komentar</h3>
+                    <textarea id="commentInput" rows="4" placeholder="Tulis komentar..."></textarea><br>
+                    <button onclick="addComment()">Kirim</button>
+                    <ul id="commentList"></ul>
+                `;
             };
             // --- FUNCTIONS ---
             function showContent(menuKey) {
