@@ -126,6 +126,7 @@
   <button class="menu-btn" onclick="showContent('pr')">Tugas / PR</button>
   <button class="menu-btn" onclick="showContent('galeri')">Galeri Foto</button>
   <button class="menu-btn" onclick="showContent('pesan')">Tuliskan Komentar</button>
+  <button class="menu-btn" onclick="showContent('login admin')">login admin</button>
 </nav>
 
 <div id="content">
