@@ -286,7 +286,7 @@
 
   function adminLogin() {
     const password = prompt("Masukkan kata sandi admin:", "");
-    if (password === "admin9bravo") { // Ganti "admin9bravo" dengan kata sandi yang lebih aman
+    if (password === "admin9b") { // Ganti "admin9b" dengan kata sandi yang lebih aman
       renderAdminView();
     } else if (password !== null) {
       alert("Kata sandi salah!");
